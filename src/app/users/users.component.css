@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+  }
+table, th, td {
+    border: 1px solid black;
+  }
+  th {
+      text-align: left;
+  }
+  .search-div {
+      text-align: center;
+      padding-bottom: 2%;
+  }
+h2 {
+    text-align: center;
+    color: royalblue;
+}

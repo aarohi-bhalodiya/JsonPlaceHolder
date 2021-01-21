@@ -1,0 +1,27 @@
+<h2>List of Users</h2>
+
+<div class="search-div"><input name="search" placeholder="Search..." [(ngModel)]="searchVal"> <button (click)="search()">Search</button></div>
+
+<p *ngIf="searchVal && searchResult">Search result is not found.</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let user of users">
+    <td>
+      {{user.name}}
+    </td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.phone}}</td>
+    <td><a routerLink="/post/{{user.id}}">View Post</a></td>
+  </tr>
+</tbody>
+  </table>
